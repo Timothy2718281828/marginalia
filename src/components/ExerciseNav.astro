@@ -1,0 +1,22 @@
+---
+// Previous / Next exercise navigation.
+export interface Props {
+  prev?: { label: string; href: string };
+  next?: { label: string; href: string };
+  parent?: { label: string; href: string };
+}
+
+const { prev, next, parent } = Astro.props;
+---
+
+<nav class="exercise-nav">
+  <div class="exercise-nav-left">
+    {prev && <a href={prev.href} class="nav-link prev">← {prev.label}</a>}
+  </div>
+  <div class="exercise-nav-center">
+    {parent && <a href={parent.href} class="nav-link up">↑ {parent.label}</a>}
+  </div>
+  <div class="exercise-nav-right">
+    {next && <a href={next.href} class="nav-link next">{next.label} →</a>}
+  </div>
+</nav>

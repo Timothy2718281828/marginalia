@@ -1,0 +1,33 @@
+---
+// Display difficulty and status badges for exercise pages.
+export interface Props {
+  difficulty: "easy" | "medium" | "hard";
+  status: "draft" | "review" | "done";
+}
+
+const { difficulty, status } = Astro.props;
+
+const difficultyMap = {
+  easy: { label: "简单", class: "diff-easy" },
+  medium: { label: "中等", class: "diff-medium" },
+  hard: { label: "困难", class: "diff-hard" },
+};
+
+const statusMap = {
+  draft: { label: "草稿", class: "status-draft" },
+  review: { label: "待审", class: "status-review" },
+  done: { label: "完成", class: "status-done" },
+};
+
+const d = difficultyMap[difficulty];
+const s = statusMap[status];
+---
+
+<div class="exercise-badges">
+  <span class={`badge ${d.class}`} title={`难度: ${d.label}`}>
+    {d.label}
+  </span>
+  <span class={`badge ${s.class}`} title={`状态: ${s.label}`}>
+    {s.label}
+  </span>
+</div>

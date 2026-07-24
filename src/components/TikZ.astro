@@ -1,0 +1,23 @@
+---
+// Interactive TikZ component — renders SVG from precompiled TikZ code.
+// This is the client-facing wrapper. Actual compilation happens at build time
+// via the remark-tikz plugin. This component is for cases where you want to
+// embed TikZ inline in an .astro file rather than in markdown.
+export interface Props {
+  code: string;
+  caption?: string;
+}
+
+const { code, caption } = Astro.props;
+---
+
+<div class="tikz-figure">
+  <!--
+    For inline component use, we rely on the remark plugin for md content.
+    This component serves as a placeholder for future dynamic rendering.
+  -->
+  <div class="tikz-placeholder">
+    <pre><code>{code}</code></pre>
+    {caption && <figcaption>{caption}</figcaption>}
+  </div>
+</div>

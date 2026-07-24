@@ -1,0 +1,399 @@
+/* ================================================================
+   Marginalia — Classical Academic Typography
+   ================================================================ */
+
+/* --- Tokens --- */
+:root {
+  --font-body: 'Times New Roman', 'Noto Serif CJK SC', 'STSong', serif;
+  --font-heading: 'Times New Roman', 'Noto Serif CJK SC', serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+  --font-ui: 'Inter', 'SF Pro Text', 'PingFang SC', sans-serif;
+
+  /* Override Starlight's own font variables */
+  --sl-font: 'Times New Roman', 'Noto Serif CJK SC', 'STSong', serif;
+  --sl-font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  --ink: #1c1c1c;
+  --ink-muted: #6b6b6b;
+  --ink-faint: #999;
+  --accent: #5b3a1c;
+  --paper: #fdfbf7;
+  --paper-warm: #f6f2ea;
+  --rule: #d4cfc7;
+  --rule-light: #e8e3db;
+}
+
+:root[data-theme="dark"] {
+  --ink: #d4cfc7;
+  --ink-muted: #90897e;
+  --ink-faint: #6b655d;
+  --accent: #c9a96e;
+  --paper: #1a1815;
+  --paper-warm: #211e1a;
+  --rule: #3a3530;
+  --rule-light: #2a2622;
+}
+
+/* ================================================================
+   Typography
+   ================================================================ */
+
+/* Force body-level font — Starlight variable may not reach everywhere */
+html, body, .sl-markdown-content {
+  font-family: 'Times New Roman', 'Noto Serif CJK SC', 'STSong', serif;
+}
+
+.sl-markdown-content {
+  font-family: var(--font-body);
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: var(--ink);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.sl-markdown-content h1,
+.sl-markdown-content h2,
+.sl-markdown-content h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+.sl-markdown-content h1 {
+  font-size: 1.85rem;
+  margin: 3rem 0 1.25rem;
+}
+
+.sl-markdown-content h1::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 1px;
+  background: var(--rule);
+  margin-top: 0.75rem;
+}
+
+.sl-markdown-content h2 {
+  font-size: 1.3rem;
+  margin: 2.5rem 0 0.75rem;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.04em;
+}
+
+.sl-markdown-content h3 {
+  font-size: 1.05rem;
+  margin: 1.75rem 0 0.5rem;
+  font-style: italic;
+  color: var(--ink-muted);
+}
+
+.sl-markdown-content p { margin-bottom: 1.25rem; }
+
+.sl-markdown-content a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule-light);
+  transition: border-color 0.2s;
+}
+.sl-markdown-content a:hover { border-bottom-color: var(--accent); }
+
+/* --- Code --- */
+.sl-markdown-content code:not(pre code) {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--paper-warm);
+  padding: 0.1em 0.35em;
+  border-radius: 2px;
+}
+
+.sl-markdown-content pre {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: var(--paper-warm);
+  border-left: 2px solid var(--rule);
+  padding: 0.85rem 1.1rem;
+  overflow-x: auto;
+  line-height: 1.55;
+  border-radius: 0;
+}
+
+/* --- Blockquote --- */
+.sl-markdown-content blockquote {
+  border: none;
+  border-left: 2px solid var(--rule);
+  background: transparent;
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--ink-muted);
+}
+
+/* --- Tables --- */
+.sl-markdown-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.92rem;
+}
+
+.sl-markdown-content th {
+  font-weight: 600;
+  font-size: 0.8rem;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  padding: 0.4rem 0 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+
+.sl-markdown-content td {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--rule-light);
+}
+
+/* --- Horizontal rule --- */
+.sl-markdown-content hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 3rem 0;
+  width: 30%;
+}
+
+/* ================================================================
+   KaTeX
+   ================================================================ */
+
+.katex { font-size: 1.06em; }
+.katex-display {
+  overflow-x: auto;
+  padding: 0.4rem 0;
+  margin: 1.5rem 0;
+}
+.katex-display > .katex { font-size: 1.1em; }
+
+/* ================================================================
+   TikZ Figures
+   ================================================================ */
+
+.tikz-figure { margin: 2rem 0; text-align: center; }
+
+.tikz-svg-wrapper {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0.75rem;
+  background: #fff;
+  border: 1px solid var(--rule-light);
+}
+
+.tikz-svg-wrapper svg { max-width: 100%; height: auto; display: block; }
+
+:root[data-theme="dark"] .tikz-svg-wrapper { background: #fff; }
+
+.tikz-error {
+  border-left: 2px solid #c44;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  background: var(--paper-warm);
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+}
+.tikz-error-banner { font-weight: 600; color: #c44; margin-bottom: 0.5rem; }
+
+/* ================================================================
+   Badges — understated
+   ================================================================ */
+
+.exercise-badges {
+  display: flex;
+  gap: 0.4rem;
+  margin: 0.4rem 0 2rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.55rem;
+  border-radius: 3px;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.diff-easy    { background: transparent; color: var(--ink-faint); border: 1px solid var(--rule-light); }
+.diff-medium  { background: transparent; color: var(--ink-muted); border: 1px solid var(--rule); }
+.diff-hard    { background: var(--ink); color: var(--paper); border: 1px solid var(--ink); }
+.status-draft { background: transparent; color: var(--ink-faint); border: 1px dashed var(--rule-light); }
+.status-review{ background: transparent; color: var(--ink-muted); border: 1px solid var(--rule); }
+.status-done  { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+
+:root[data-theme="dark"] .diff-hard  { background: var(--ink); color: var(--paper); }
+:root[data-theme="dark"] .status-done { color: var(--ink); border-color: var(--ink); }
+
+/* ================================================================
+   Solution / Hint blocks
+   ================================================================ */
+
+.solution-block {
+  border: none;
+  border-left: 2px solid var(--rule);
+  background: transparent;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin: 1.5rem 0;
+}
+.solution-block::before {
+  content: "— 解答";
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.78rem;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  margin-bottom: 0.5rem;
+}
+
+.hint-block {
+  border: none;
+  border-left: 2px solid var(--rule);
+  background: transparent;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin: 1.5rem 0;
+}
+.hint-block::before {
+  content: "— 提示";
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.78rem;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  margin-bottom: 0.5rem;
+}
+
+/* ================================================================
+   Navigation
+   ================================================================ */
+
+.exercise-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+}
+.exercise-nav-left,
+.exercise-nav-center,
+.exercise-nav-right { flex: 1; }
+.exercise-nav-center { text-align: center; }
+.exercise-nav-right  { text-align: right; }
+
+.nav-link {
+  color: var(--ink-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.nav-link:hover { color: var(--ink); }
+
+/* ================================================================
+   Sidebar
+   ================================================================ */
+
+nav.sidebar {
+  font-family: var(--font-ui);
+  font-size: 0.84rem;
+  border-right: 1px solid var(--rule-light);
+  background: var(--paper);
+}
+
+nav.sidebar a {
+  border-radius: 0;
+  transition: background 0.12s;
+}
+nav.sidebar a:hover { background: var(--paper-warm); }
+nav.sidebar a[aria-current="page"] {
+  background: transparent;
+  color: var(--accent);
+  font-weight: 500;
+  border-right: 2px solid var(--accent);
+}
+
+/* ================================================================
+   Layout
+   ================================================================ */
+
+.main-pane { padding: 2.5rem 3rem; }
+
+/* ================================================================
+   Home page — book index
+   ================================================================ */
+
+.book-index {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+.book-index > li {
+  margin-bottom: 2.5rem;
+}
+.book-index h3 {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule-light);
+  font-style: normal;
+}
+.book-index .book-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem 2rem;
+}
+.book-index .book-list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.35rem 0;
+  border-bottom: none;
+  color: var(--ink);
+  text-decoration: none;
+}
+.book-index .book-list a:hover { color: var(--accent); }
+.book-index .book-list a .author {
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  font-style: italic;
+  white-space: nowrap;
+  margin-left: 0.5rem;
+}
+
+/* ================================================================
+   Responsive
+   ================================================================ */
+
+@media (max-width: 768px) {
+  .sl-markdown-content { font-size: 1rem; line-height: 1.75; }
+  .sl-markdown-content h1 { font-size: 1.5rem; }
+  .sl-markdown-content h2 { font-size: 1.15rem; }
+  .main-pane { padding: 1.5rem 1rem; }
+  .book-index .book-list { grid-template-columns: 1fr; }
+}
+
+@media print {
+  .sidebar, .exercise-nav, .exercise-badges { display: none; }
+  .sl-markdown-content { max-width: 100%; font-size: 11pt; line-height: 1.55; }
+}

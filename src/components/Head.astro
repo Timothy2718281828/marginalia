@@ -1,0 +1,44 @@
+---
+// Custom Head — academic typography + KaTeX
+---
+
+<!-- System font stack — no external font requests needed -->
+<meta name="color-scheme" content="light dark" />
+
+<!-- KaTeX CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+  integrity="sha384-nB0miv6/jRmo5UMMR1wu3G5fkGQ/nCPVA3RzQkzS9Kk6lD5Ei/LMJs0UJkFj6U"
+  crossorigin="anonymous"
+/>
+
+<style>
+  /* Home link cards */
+  .home-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 2rem 0;
+  }
+  .home-links a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--c-border, #e7e5e4);
+    border-radius: 8px;
+    font-family: var(--font-ui, sans-serif);
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--c-text, #1a1a2e);
+    text-decoration: none;
+    background: var(--c-surface, #fff);
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .home-links a:hover {
+    border-color: var(--c-accent, #2563eb);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  :root[data-theme="dark"] .home-links a:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  }
+</style>

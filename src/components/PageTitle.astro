@@ -1,0 +1,14 @@
+---
+// Custom PageTitle that adds exercise badges below the title.
+import ExerciseBadge from "./ExerciseBadge.astro";
+
+const { entry } = Astro.props;
+const title = entry.data?.title || "";
+const difficulty = entry.data?.difficulty as "easy" | "medium" | "hard" | undefined;
+const status = entry.data?.status as "draft" | "review" | "done" | undefined;
+---
+
+<div>
+  <h1 id="_top">{title}</h1>
+  {difficulty && status && <ExerciseBadge difficulty={difficulty} status={status} />}
+</div>

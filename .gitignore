@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.tikz-cache/
+.DS_Store
+*.log
+*.pdf
+dist.tar.gz
+.astro/
+scripts/test-tikz.ts
