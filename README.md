@@ -1,34 +1,58 @@
 # Marginalia
 
-数学经典教材习题解答与学习笔记。
+Exercise solutions and study notes for classic mathematics textbooks.
 
-## 技术栈
+Built with [Astro](https://astro.build) + [Starlight](https://starlight.astro.build).
 
-- [Astro](https://astro.build) + [Starlight](https://starlight.astro.build)
-- [KaTeX](https://katex.org) 数学公式渲染
-- TikZ 图表支持（通过 `pdflatex` → `pdftocairo -svg` 编译管线）
+## Features
 
-## 本地运行
+- **KaTeX** for mathematical typesetting
+- **TikZ** diagram support — server-side compilation via `pdflatex` → `pdftocairo -svg`
+- **Giscus** comments powered by GitHub Discussions
+- Dark mode, RSS, search out of the box
+
+## Getting Started
 
 ```bash
 npm install
 npm run dev
 ```
 
-### TikZ 图表
+### TikZ Prerequisites
 
-Markdown 中的 ````tikz` 代码块会在构建时自动编译为 SVG。编译需要本机安装：
+TikZ code blocks in Markdown are compiled to SVG at build time. This requires a local LaTeX installation:
 
-- LaTeX（含 `pdflatex`）
-- Poppler（含 `pdftocairo`）
+- LaTeX distribution with `pdflatex`
+- Poppler utilities (`pdftocairo`)
 
-未安装时 TikZ 块会降级为源码展示，不影响其他内容。
+Without them, TikZ blocks fall back to displaying source code — everything else works fine.
 
-## 构建部署
+### Build & Deploy
 
 ```bash
-npm run build    # 输出到 dist/
-npm run preview  # 预览构建结果
+npm run build     # outputs to dist/
+npm run deploy    # build + upload + publish
+npm run preview   # preview the build locally
 ```
 
-站点部署于 `/math` 路径下。
+The site is served under the `/math` base path.
+
+## Books Covered
+
+| Subject | Book | Status |
+|---|---|---|
+| Analysis | Zorich — Mathematical Analysis | In progress |
+| | Folland — Real Analysis | Planned |
+| | Bollobás — Linear Analysis | Planned |
+| | Stein & Shakarchi — Complex Analysis | Planned |
+| Probability & Statistics | Shiryaev — Probability | In progress |
+| | Williams — Probability with Martingales | Planned |
+| | Wasserman — All of Statistics | Planned |
+| | van der Vaart — Asymptotic Statistics | Planned |
+| | Le Gall — Brownian Motion | Planned |
+| Foundations | Munkres — Topology | In progress |
+| | Halmos — Naive Set Theory | Planned |
+
+## License
+
+MIT

@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "powershell .\\deploy.ps1"
+    "deploy": "powershell .\\deploy.ps1",
+    "watch": "chokidar \"src/content/**/*.md\" \"astro.config.ts\" -c \"npm run deploy\""
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",

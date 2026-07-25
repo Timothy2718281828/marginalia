@@ -3,6 +3,7 @@ import starlight from "@astrojs/starlight";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import { remarkTikZ } from "./src/lib/remark-tikz";
+import { katexMacros } from "./src/lib/macros";
 
 export default defineConfig({
   site: "https://marginmath.cc",
@@ -106,6 +107,6 @@ export default defineConfig({
   ],
   markdown: {
     remarkPlugins: [remarkMath, remarkTikZ],
-    rehypePlugins: [rehypeKatex],
+    rehypePlugins: [[rehypeKatex, { macros: katexMacros }]],
   },
 });
