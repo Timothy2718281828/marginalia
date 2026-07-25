@@ -3,9 +3,9 @@
 import ExerciseBadge from "./ExerciseBadge.astro";
 
 const { entry } = Astro.props;
-const title = entry.data?.title || "";
-const difficulty = entry.data?.difficulty as "easy" | "medium" | "hard" | undefined;
-const status = entry.data?.status as "draft" | "review" | "done" | undefined;
+const title = entry?.data?.title || "";
+const difficulty = entry?.data?.difficulty as "easy" | "medium" | "hard" | undefined;
+const status = entry?.data?.status as "draft" | "review" | "done" | undefined;
 ---
 
 <div>

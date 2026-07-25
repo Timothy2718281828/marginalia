@@ -3,9 +3,11 @@ title: Marginalia
 description: 数学经典教材习题解答与学习笔记
 ---
 
-数学经典教材的课后习题，在网上往往找不到系统性的解答。这里按 **书 → 章 → 节 → 题号** 整理，每道题标注难度和完成状态。重思路，重图示，重交叉引用。
+数学经典教材的课后习题，往往不容易找到系统性的解答，这里略作整理。
 
 解答随学习进度持续更新。如果你也在读这些书，欢迎讨论。
+
+受限于现阶段的知识水平，文中肯定会有证明不严密、甚至完全谬误的地方，欢迎各位指出，我也将持续完善这些内容。
 
 ---
 
@@ -37,6 +39,13 @@ description: 数学经典教材习题解答与学习笔记
 <ul class="book-list">
 <li><a href="/math/munkres-topology/">Munkres · 拓扑学<span class="author">Munkres</span></a></li>
 <li><a href="/math/halmos-set-theory/">Halmos · 朴素集合论<span class="author">Halmos</span></a></li>
+</ul>
+</li>
+
+<li>
+<h3>杂题</h3>
+<ul class="book-list">
+<li><a href="/math/misc/">杂题收集<span class="author">不限于特定教材</span></a></li>
 </ul>
 </li>
 

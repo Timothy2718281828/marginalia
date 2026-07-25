@@ -22,7 +22,7 @@ Munkres 的《拓扑学》是最经典的研究生拓扑入门教材：
 
 ## 各章习题解答
 
-- **第一章** · 集合论与逻辑 —— [进入 →](/munkres-topology/ch01-set-theory/)
+- **第一章** · 集合论与逻辑 —— [进入 →](/math/munkres-topology/ch01-set-theory/)
 
 ### 写作进行中
 

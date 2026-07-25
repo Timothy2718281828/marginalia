@@ -23,7 +23,7 @@ description: А. Н. Ширяев — Probability 习题解答
 
 ## 各章习题解答
 
-- **第一章** · 概率空间 —— [进入 →](/shiryaev-probability/ch01-probability-space/)
+- **第一章** · 概率空间 —— [进入 →](/math/shiryaev-probability/ch01-probability-space/)
 
 ### 写作进行中
 

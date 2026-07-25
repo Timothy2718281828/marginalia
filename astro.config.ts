@@ -5,7 +5,7 @@ import rehypeKatex from "rehype-katex";
 import { remarkTikZ } from "./src/lib/remark-tikz";
 
 export default defineConfig({
-  site: "https://150.158.54.129",
+  site: "https://marginmath.cc",
   base: "/math",
   integrations: [
     starlight({
@@ -16,7 +16,7 @@ export default defineConfig({
         { icon: "github", label: "GitHub", href: "https://github.com/Timothy2718281828/marginalia" },
       ],
       sidebar: [
-        { label: "Marginalia", link: "/math/" },
+        { label: "Marginalia", link: "/" },
         {
           label: "分析",
           collapsed: false,
@@ -25,24 +25,19 @@ export default defineConfig({
               label: "Zorich · 数学分析",
               collapsed: true,
               items: [
-                { label: "概述", link: "/math/zorich-analysis/" },
+                { label: "概述", link: "/zorich-analysis/" },
                 {
                   label: "第一章 · 实数",
                   collapsed: true,
                   items: [
-                    { label: "§1 实数公理与确界", link: "/math/zorich-analysis/ch01-real-numbers/s01-axioms" },
-                    {
-                      label: "习题集", collapsed: true, items: [
-                        { label: "习题 1.1.1", link: "/math/zorich-analysis/ch01-real-numbers/ex-1.1.1" },
-                      ],
-                    },
+                    { label: "习题 1.1.1", link: "/zorich-analysis/ch01-real-numbers/ex-1-1-1" },
                   ],
                 },
               ],
             },
-            { label: "Folland · 实分析", link: "/math/folland-real-analysis/" },
-            { label: "Bollobás · 线性分析", link: "/math/bollobas-linear-analysis/" },
-            { label: "Stein-Shakarchi · 复分析", link: "/math/stein-shakarchi-complex-analysis/" },
+            { label: "Folland · 实分析", link: "/folland-real-analysis/" },
+            { label: "Bollobás · 线性分析", link: "/bollobas-linear-analysis/" },
+            { label: "Stein-Shakarchi · 复分析", link: "/stein-shakarchi-complex-analysis/" },
           ],
         },
         {
@@ -53,20 +48,18 @@ export default defineConfig({
               label: "Shiryaev · 概率论",
               collapsed: true,
               items: [
-                { label: "概述", link: "/math/shiryaev-probability/" },
+                { label: "概述", link: "/shiryaev-probability/" },
                 {
                   label: "第一章 · 概率空间",
                   collapsed: true,
-                  items: [
-                    { label: "§1 概率模型的公理化", link: "/math/shiryaev-probability/ch01-probability-space/s01-axioms" },
-                  ],
+                  items: [],
                 },
               ],
             },
-            { label: "Williams · 概率与鞅", link: "/math/williams-probability/" },
-            { label: "Wasserman · 统计学", link: "/math/wasserman-statistics/" },
-            { label: "van der Vaart · 渐近统计", link: "/math/van-der-vaart-asymptotics/" },
-            { label: "Le Gall · 布朗运动", link: "/math/le-gall-brownian-motion/" },
+            { label: "Williams · 概率与鞅", link: "/williams-probability/" },
+            { label: "Wasserman · 统计学", link: "/wasserman-statistics/" },
+            { label: "van der Vaart · 渐近统计", link: "/van-der-vaart-asymptotics/" },
+            { label: "Le Gall · 布朗运动", link: "/le-gall-brownian-motion/" },
           ],
         },
         {
@@ -77,17 +70,22 @@ export default defineConfig({
               label: "Munkres · 拓扑学",
               collapsed: true,
               items: [
-                { label: "概述", link: "/math/munkres-topology/" },
+                { label: "概述", link: "/munkres-topology/" },
                 {
                   label: "第一章 · 集合论与逻辑",
                   collapsed: true,
-                  items: [
-                    { label: "§1 基本概念", link: "/math/munkres-topology/ch01-set-theory/s01-fundamentals" },
-                  ],
+                  items: [],
                 },
               ],
             },
-            { label: "Halmos · 朴素集合论", link: "/math/halmos-set-theory/" },
+            { label: "Halmos · 朴素集合论", link: "/halmos-set-theory/" },
+          ],
+        },
+        {
+          label: "杂题",
+          collapsed: false,
+          items: [
+            { label: "杂题收集", link: "/misc/" },
           ],
         },
       ],
@@ -95,9 +93,14 @@ export default defineConfig({
         "./src/styles/custom.css",
         "katex/dist/katex.min.css",
       ],
+      lastUpdated: true,
+      editLink: {
+        baseUrl: "https://github.com/Timothy2718281828/marginalia/edit/main/",
+      },
       components: {
         Head: "./src/components/Head.astro",
         Footer: "./src/components/Footer.astro",
+        PageTitle: "./src/components/PageTitle.astro",
       },
     }),
   ],

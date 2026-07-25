@@ -25,7 +25,7 @@ description: Б. А. Зорич — Mathematical Analysis 习题解答
 
 ### 第一卷
 
-- **第一章** · 实数 —— [进入 →](/zorich-analysis/ch01-real-numbers/)
+- **第一章** · 实数 —— [进入 →](/math/zorich-analysis/ch01-real-numbers/)
 
 ### 写作进行中
 

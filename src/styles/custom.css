@@ -382,15 +382,89 @@ nav.sidebar a[aria-current="page"] {
 }
 
 /* ================================================================
-   Responsive
+   Responsive — mobile-first refinements
    ================================================================ */
 
 @media (max-width: 768px) {
-  .sl-markdown-content { font-size: 1rem; line-height: 1.75; }
-  .sl-markdown-content h1 { font-size: 1.5rem; }
-  .sl-markdown-content h2 { font-size: 1.15rem; }
-  .main-pane { padding: 1.5rem 1rem; }
-  .book-index .book-list { grid-template-columns: 1fr; }
+  /* Layout breathing room */
+  .main-pane { padding: 1rem 0.75rem; }
+
+  /* Typography — keep it readable, not tiny */
+  .sl-markdown-content {
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 100%;
+    padding: 0 0.25rem;
+  }
+  .sl-markdown-content h1 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .sl-markdown-content h1::after { width: 2rem; margin-top: 0.5rem; }
+  .sl-markdown-content h2 { font-size: 1.15rem; margin-top: 1.75rem; }
+  .sl-markdown-content h3 { font-size: 1rem; }
+
+  /* Stop horizontal overflow on all children */
+  .sl-markdown-content * { max-width: 100%; word-wrap: break-word; }
+
+  /* Tables — scroll instead of squishing */
+  .sl-markdown-content table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.85rem;
+  }
+  .sl-markdown-content th,
+  .sl-markdown-content td { padding: 0.35rem 0.5rem; }
+
+  /* Code blocks */
+  .sl-markdown-content pre {
+    font-size: 0.8rem;
+    padding: 0.65rem 0.8rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* KaTeX — scroll wide equations */
+  .katex-display {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* TikZ figures */
+  .tikz-svg-wrapper { padding: 0.4rem; }
+
+  /* Blocks (solution, hint) */
+  .solution-block,
+  .hint-block { padding: 0.5rem 0 0.5rem 0.85rem; margin: 1rem 0; }
+
+  /* Badges */
+  .badge { font-size: 0.68rem; padding: 0.1rem 0.45rem; }
+
+  /* Exercise nav — stack vertically */
+  .exercise-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    font-size: 0.82rem;
+    padding: 1rem 0;
+  }
+  .exercise-nav-center { display: none; }
+
+  /* Home page book index */
+  .book-index { margin: 1.25rem 0; }
+  .book-index > li { margin-bottom: 1.75rem; }
+  .book-index h3 { font-size: 0.75rem; }
+  .book-index .book-list {
+    grid-template-columns: 1fr;
+    gap: 0.15rem 0;
+  }
+  .book-index .book-list a { padding: 0.45rem 0; font-size: 0.95rem; }
+  .book-index .book-list a .author { font-size: 0.78rem; }
+
+  /* Giscus */
+  .giscus-wrapper { margin-top: 2rem; padding-top: 1.25rem; }
 }
 
 @media print {
