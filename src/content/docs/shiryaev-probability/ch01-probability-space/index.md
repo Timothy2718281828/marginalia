@@ -1,8 +1,5 @@
 ---
-title: 第一章 · 概率空间
-description: Shiryaev 概率论第一章习题解答
+title: Chapter 1 · Probability Space
 ---
-
-## 第一章：概率空间
-
-习题解答随学习进度逐步添加。
+## Chapter 1: Probability Space
+Kolmogorov axioms, sigma-algebras, probability measures.

@@ -1,10 +1,10 @@
 ---
-title: 杂题收集
-description: 不隶属于特定教材的习题与思考
+title: Miscellaneous Problems
+description: Problems and exercises not tied to a specific textbook
 ---
 
-## 杂题收集
+## Miscellaneous Problems
 
-这里收集一些零散的数学问题——不来自某一本特定的教材，可能是竞赛题、面试题、或日常思考中遇到的有趣问题。
+A collection of mathematical problems drawn from varied sources — competition problems, interview questions, and interesting challenges encountered in daily reading. Not tied to any single textbook.
 
-> 随缘更新。
+> Updated on an irregular schedule.

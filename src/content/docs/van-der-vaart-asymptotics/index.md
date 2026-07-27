@@ -1,14 +1,14 @@
 ---
-title: van der Vaart · 渐近统计
+title: van der Vaart · Asymptotic Statistics
 description: A. W. van der Vaart — Asymptotic Statistics
 ---
 
-## van der Vaart · 渐近统计
+## Overview
 
 A. W. van der Vaart, *Asymptotic Statistics*.
 
-渐近理论的系统处理，MLE 渐近性质、Delta 方法、M-估计。
+A systematic treatment of asymptotic theory: MLE asymptotic properties, the delta method, M-estimation, and empirical processes. The standard reference for graduate-level asymptotics.
 
 :::note
-尚未开始。解答将在后续学习中逐步添加。
+Not yet started. Solutions will be added as I work through the text.
 :::

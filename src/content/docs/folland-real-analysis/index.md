@@ -1,14 +1,14 @@
 ---
-title: Folland · 实分析
-description: 'G. B. Folland — Real Analysis: Modern Techniques and Their Applications'
+title: Folland · Real Analysis
+description: "G. B. Folland — Real Analysis: Modern Techniques and Their Applications"
 ---
 
-## Folland · 实分析
+## Overview
 
 Gerald B. Folland, *Real Analysis: Modern Techniques and Their Applications*, 2nd Edition.
 
-测度论、积分论、函数空间的现代处理。习题精炼深刻。
+Measure theory, integration theory, and functional spaces — a modern treatment. Exercises are concise and deep.
 
 :::note
-尚未开始。解答将在后续学习中逐步添加。
+Not yet started. Solutions will be added as I work through the text.
 :::

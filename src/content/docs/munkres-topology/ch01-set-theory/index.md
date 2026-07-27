@@ -1,8 +1,5 @@
 ---
-title: 第一章 · 集合论与逻辑
-description: Munkres 拓扑学第一章习题解答
+title: Chapter 1 · Set Theory and Logic
 ---
-
-## 第一章：集合论与逻辑
-
-习题解答随学习进度逐步添加。
+## Chapter 1: Set Theory and Logic
+Fundamental concepts, functions, relations, the Axiom of Choice.

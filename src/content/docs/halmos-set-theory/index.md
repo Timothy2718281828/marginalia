@@ -1,14 +1,14 @@
 ---
-title: Halmos · 朴素集合论
+title: Halmos · Naive Set Theory
 description: P. R. Halmos — Naive Set Theory
 ---
 
-## Halmos · 朴素集合论
+## Overview
 
 Paul R. Halmos, *Naive Set Theory*.
 
-集合论的公理化入门，篇幅短小但涵盖 ZFC 的核心内容。
+An axiomatic introduction to set theory — short (~100 pages) but covers the core of ZFC: axioms, ordinals, cardinals, and the axiom of choice. The ideal quick grounding before tackling topology and analysis.
 
 :::note
-尚未开始。解答将在后续学习中逐步添加。
+Not yet started. Solutions will be added as I work through the text.
 :::

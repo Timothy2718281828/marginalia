@@ -1,32 +1,34 @@
 ---
-title: 卓里奇 · 数学分析
-description: Б. А. Зорич — Mathematical Analysis 习题解答
+title: Zorich · Mathematical Analysis
+description: V. A. Zorich — Mathematical Analysis I & II, exercise solutions
 ---
 
-## 基本信息
+## Overview
 
 | | |
 |---|---|
-| **书名** | Mathematical Analysis I & II |
-| **作者** | Б. А. Зорич (Vladimir A. Zorich) |
-| **中译** | 数学分析（卓里奇） |
-| **难度** | 较高，适合有一定基础的学习者 |
+| **Title** | Mathematical Analysis I & II |
+| **Author** | Vladimir A. Zorich (В. А. Зорич) |
+| **Level** | Advanced undergraduate |
+| **Original** | Russian; widely used in English, German, and Chinese translations |
 
-## 本书特点
+## Why Zorich?
 
-卓里奇的《数学分析》被公认为现代数学分析教材的巅峰之一。与传统的 $\varepsilon$-$\delta$ 训练不同，卓里奇从更高的观点看待分析学：
+Zorich's *Mathematical Analysis* is widely regarded as one of the finest modern analysis textbooks. Unlike traditional $\varepsilon$-$\delta$ drill books, Zorich approaches analysis from a higher vantage point:
 
-- 强调**几何直观**与**物理背景**
-- 将分析置于现代数学的大框架中
-- 习题极富启发性，常引入后续理论的重要概念
-- 对线性代数、微分形式、流形上的分析有系统介绍
+- Emphasizes **geometric intuition** and **physical motivation** — analysis as the language of natural science
+- Situates single-variable analysis within the broader framework of modern mathematics
+- Exercises are exceptionally insightful, often introducing concepts that reappear later in topology, differential geometry, and functional analysis
+- Volume II develops a systematic treatment of multivariable analysis, differential forms, and integration on manifolds
 
-## 各章习题解答
+A note on difficulty: Zorich is demanding. The exposition is concise and the exercises are nontrivial. It rewards slow, careful reading.
 
-### 第一卷
+## Exercises by Chapter
 
-- **第一章** · 实数 —— [进入 →](/math/zorich-analysis/ch01-real-numbers/)
+### Volume I
 
-### 写作进行中
+- **Chapter 1** · Real Numbers — [Browse →](/math/zorich-analysis/ch01-real-numbers/)
 
-我正在按自己的学习进度逐步完成习题解答。如果你也对某道题感兴趣或想讨论，欢迎通过 GitHub 联系我。
+### Work in progress
+
+Solutions are added as I work through the text. If you are reading Zorich and want to discuss a problem, feel free to reach out via GitHub.

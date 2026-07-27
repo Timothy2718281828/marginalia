@@ -1,14 +1,14 @@
 ---
-title: Stein-Shakarchi · 复分析
-description: E. M. Stein & R. Shakarchi — Complex Analysis
+title: Stein-Shakarchi · Complex Analysis
+description: E. M. Stein & R. Shakarchi — Complex Analysis (Princeton Lectures in Analysis II)
 ---
 
-## Stein-Shakarchi · 复分析
+## Overview
 
 Elias M. Stein & Rami Shakarchi, *Complex Analysis* (Princeton Lectures in Analysis II).
 
-全纯函数、Cauchy 积分公式、留数定理、共形映射、椭圆函数。
+Holomorphic functions, the Cauchy integral formula, residue theorem, conformal mapping, elliptic functions. Part of the celebrated Princeton Lectures in Analysis series.
 
 :::note
-尚未开始。解答将在后续学习中逐步添加。
+Not yet started. Solutions will be added as I work through the text.
 :::

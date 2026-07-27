@@ -12,7 +12,13 @@ export default defineConfig({
     starlight({
       title: "Marginalia",
       description: "数学经典教材习题解答与学习笔记",
-      defaultLocale: "zh-CN",
+      defaultLocale: "root",
+      pagefind: {},
+      locales: {
+        root: { label: "English", lang: "en" },
+        zh: { label: "简体中文", lang: "zh-CN" },
+        "zh-hant": { label: "繁體中文", lang: "zh-TW" },
+      },
       social: [
         { icon: "github", label: "GitHub", href: "https://github.com/Timothy2718281828/marginalia" },
       ],

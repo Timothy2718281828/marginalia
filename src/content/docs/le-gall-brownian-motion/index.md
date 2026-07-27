@@ -1,14 +1,14 @@
 ---
-title: Le Gall · 布朗运动
+title: Le Gall · Brownian Motion
 description: J.-F. Le Gall — Brownian Motion, Martingales, and Stochastic Calculus
 ---
 
-## Le Gall · 布朗运动
+## Overview
 
 Jean-François Le Gall, *Brownian Motion, Martingales, and Stochastic Calculus*.
 
-布朗运动的现代处理，连续鞅、随机积分、Itô 公式。
+A modern treatment of Brownian motion: continuous martingales, stochastic integration, and the Itô formula. Concise and rigorous — the standard gateway to stochastic calculus.
 
 :::note
-尚未开始。解答将在后续学习中逐步添加。
+Not yet started. Solutions will be added as I work through the text.
 :::

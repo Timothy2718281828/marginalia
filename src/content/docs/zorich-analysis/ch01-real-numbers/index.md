@@ -1,12 +1,16 @@
 ---
-title: 第一章 · 实数
-description: Zorich 数学分析第一章习题解答
+title: "Chapter 1 · Real Numbers"
+description: Axioms of the real numbers, supremum and infimum, completeness, and the existence of irrationals
 ---
 
-## 第一章：实数
+## Chapter 1: Real Numbers
 
-| 编号 | 主题 | 难度 | 状态 |
-|------|------|------|------|
-| [习题 1.1.1](ex-1-1-1) | $\sqrt{2}$ 的无理性证明 | 简单 | 完成 |
+The real number system is the foundation of all analysis. Zorich builds $\R$ axiomatically and explores its fundamental properties: the order relation, the supremum principle, and completeness.
 
-> 更多习题解答持续添加中。
+### Exercises
+
+| # | Title | Difficulty | Status |
+|---|---|---|---|
+| 1.1.1 | [Irrationality of $\sqrt{2}$](/math/zorich-analysis/ch01-real-numbers/ex-1-1-1) | easy | done |
+
+More solutions to follow as I progress through the chapter.

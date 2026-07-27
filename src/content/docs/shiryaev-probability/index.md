@@ -1,30 +1,30 @@
 ---
-title: 施里亚耶夫 · 概率论
-description: А. Н. Ширяев — Probability 习题解答
+title: Shiryaev · Probability
+description: A. N. Shiryaev — Probability (GTM 95), exercise solutions
 ---
 
-## 基本信息
+## Overview
 
 | | |
 |---|---|
-| **书名** | Probability (GTM 95) |
-| **作者** | А. Н. Ширяев (Albert N. Shiryaev) |
-| **中译** | 概率（施里亚耶夫） |
-| **难度** | 中等，需要扎实的分析基础 |
+| **Title** | Probability (GTM 95) |
+| **Author** | Albert N. Shiryaev (А. Н. Ширяев) |
+| **Level** | Graduate; requires solid analysis background |
 
-## 本书特点
+## Why Shiryaev?
 
-施里亚耶夫的《概率论》是 Springer GTM 系列中的经典：
+Shiryaev's *Probability* is a classic in the Springer GTM series and the standard English-language reference for measure-theoretic probability:
 
-- 基于**测度论**的严格概率论体系
-- 从 Kolmogorov 公理化出发
-- 对随机过程（特别是随机游走、Martingale、Markov 链）有深入讨论
-- 习题设计精妙，与金融数学、统计推断有紧密联系
+- Builds a **rigorous, axiomatic** foundation from Kolmogorov's axioms
+- Covers classical limit theorems (LLN, CLT, law of the iterated logarithm) in depth
+- Strong treatment of **random processes** — random walks, martingales, Markov chains
+- Exercises are thoughtfully designed, with connections to mathematical finance and statistical inference
+- The bridge from undergraduate probability to graduate stochastic calculus
 
-## 各章习题解答
+Shiryaev assumes comfort with $\sigma$-algebras, measures, and Lebesgue integration. Working through Folland or an equivalent real analysis text in parallel is highly recommended — the two reinforce each other.
 
-- **第一章** · 概率空间 —— [进入 →](/math/shiryaev-probability/ch01-probability-space/)
+## Exercises by Chapter
 
-### 写作进行中
+- **Chapter 1** · Probability Spaces — [Browse →](/math/shiryaev-probability/ch01-probability-space/)
 
-习题解答随学习进度更新。
+Solutions are added as I work through the text.

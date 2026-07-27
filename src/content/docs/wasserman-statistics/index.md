@@ -1,14 +1,14 @@
 ---
-title: Wasserman · 统计学
-description: L. Wasserman — All of Statistics
+title: Wasserman · All of Statistics
+description: "L. Wasserman — All of Statistics: A Concise Course in Statistical Inference"
 ---
 
-## Wasserman · 统计学
+## Overview
 
 Larry Wasserman, *All of Statistics: A Concise Course in Statistical Inference*.
 
-统计推断的简洁教程，覆盖估计、检验、回归、非参数方法。
+A broad, concise tour of statistical inference covering estimation, hypothesis testing, regression, and nonparametric methods. An efficient survey of the toolkit every statistician needs.
 
 :::note
-尚未开始。解答将在后续学习中逐步添加。
+Not yet started. Solutions will be added as I work through the text.
 :::

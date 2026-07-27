@@ -1,14 +1,14 @@
 ---
-title: Williams · 概率与鞅
+title: Williams · Probability with Martingales
 description: D. Williams — Probability with Martingales
 ---
 
-## Williams · 概率与鞅
+## Overview
 
 David Williams, *Probability with Martingales*.
 
-以鞅论为主线的概率论教材，简洁优雅。
+A probability textbook centered on martingale theory — concise, elegant, and deeply insightful.
 
 :::note
-尚未开始。解答将在后续学习中逐步添加。
+Not yet started. Solutions will be added as I work through the text.
 :::

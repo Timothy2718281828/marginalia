@@ -1,29 +1,30 @@
 ---
-title: Munkres · 拓扑学
-description: J. R. Munkres — Topology 习题解答
+title: Munkres · Topology
+description: J. R. Munkres — Topology (2nd Edition), exercise solutions
 ---
 
-## 基本信息
+## Overview
 
 | | |
 |---|---|
-| **书名** | Topology (Second Edition) |
-| **作者** | James R. Munkres |
-| **难度** | 中等，适合首次系统学习拓扑 |
+| **Title** | Topology (Second Edition) |
+| **Author** | James R. Munkres |
+| **Level** | Graduate; suitable for a first systematic course in topology |
 
-## 本书特点
+## Why Munkres?
 
-Munkres 的《拓扑学》是最经典的研究生拓扑入门教材：
+Munkres' *Topology* is the most widely used graduate-level introduction to the subject:
 
-- **第一部分**：集合论基础、选择公理、良序
-- **第二部分**：点集拓扑（拓扑空间、连续、紧致、分离公理、度量化）
-- **第三部分**：代数拓扑（基本群、覆叠空间、Seifert-van Kampen）
-- 习题数量庞大且循序渐进，非常适合自学
+- **Part I** (Ch.1): Set theory foundations — axioms of choice, well-ordering, Zorn's lemma
+- **Part II** (Ch.2–8): Point-set topology — topological spaces, continuity, compactness, separation axioms, metrization (Urysohn theorem)
+- **Part III** (Ch.9–14): Algebraic topology — fundamental group, covering spaces, the Seifert–van Kampen theorem
+- Exceptionally large and well-sequenced exercise sets — ideal for self-study
+- Clear, unhurried exposition with extensive worked examples
 
-## 各章习题解答
+The book starts from near-scratch (only basic set theory assumed) and builds to serious results. It rewards slow, careful reading.
 
-- **第一章** · 集合论与逻辑 —— [进入 →](/math/munkres-topology/ch01-set-theory/)
+## Exercises by Chapter
 
-### 写作进行中
+- **Chapter 1** · Set Theory and Logic — [Browse →](/math/munkres-topology/ch01-set-theory/)
 
-习题解答随学习进度更新。拓扑学部分会大量使用 TikZ 绘制交换图和几何示意图。
+Solutions are added as I work through the text. Topology exercises will use TikZ for commutative diagrams and geometric illustrations.
