@@ -14,7 +14,7 @@ export async function GET(context: any) {
   return rss({
     title: "Marginalia",
     description: "数学经典教材习题解答与学习笔记",
-    site: context.site || "https://150.158.54.129",
+    site: context.site || "https://marginmath.cc",
     items: sorted.map((d) => ({
       title: d.data.title,
       description: d.data.description || "",

@@ -61,13 +61,11 @@ export function compileTikZ(code: string): TikZResult {
       cwd: workDir,
       timeout: 30000,
       stdio: "pipe",
-      shell: true,
     });
     execSync(`pdflatex -interaction=nonstopmode -halt-on-error fig.tex`, {
       cwd: workDir,
       timeout: 30000,
       stdio: "pipe",
-      shell: true,
     });
 
     // Convert PDF → SVG
@@ -75,7 +73,6 @@ export function compileTikZ(code: string): TikZResult {
       cwd: workDir,
       timeout: 15000,
       stdio: "pipe",
-      shell: true,
     });
 
     const svgContent = readFileSync(join(workDir, "fig.svg"), "utf-8");
