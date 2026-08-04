@@ -4,6 +4,7 @@
 ---
 
 <div class="giscus-wrapper">
+  <div class="giscus"></div>
   <script
     src="https://giscus.app/client.js"
     data-repo="Timothy2718281828/marginalia"
@@ -23,15 +24,15 @@
   </script>
 </div>
 
-<style>
+<style is:global>
   .giscus-wrapper {
     margin-top: 4rem;
     padding-top: 2rem;
     border-top: 1px solid var(--rule);
     width: 100%;
-    min-height: 400px;
   }
-  .giscus-wrapper iframe {
+  .giscus-wrapper, .giscus, .giscus iframe {
     width: 100% !important;
+    min-width: 100% !important;
   }
 </style>
