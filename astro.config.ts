@@ -75,11 +75,9 @@ export default defineConfig({
               collapsed: true,
               items: [
                 { label: "概述", link: "/shiryaev-probability/" },
-                {
-                  label: "第一章 · 概率空间",
-                  collapsed: true,
-                  items: [],
-                },
+                { label: "第一章 · 初等概率论", link: "/shiryaev-probability/ch01-elementary-probability/" },
+                { label: "第二章 · 概率论的数学基础", link: "/shiryaev-probability/ch02-mathematical-foundations/" },
+                { label: "第三章 · 概率测度的收敛性与CLT", link: "/shiryaev-probability/ch03-convergence-clt/" },
               ],
             },
             { label: "Williams · 概率与鞅", link: "/williams-probability/" },

@@ -13,7 +13,7 @@ description: A. N. Shiryaev — Probability (GTM 95), exercise solutions
 
 ## Why Shiryaev?
 
-Shiryaev's *Probability* is a classic in the Springer GTM series and the standard English-language reference for measure-theoretic probability:
+Shiryaev's *Probability* is a classic in the Springer GTM series and the standard reference for measure-theoretic probability:
 
 - Builds a **rigorous, axiomatic** foundation from Kolmogorov's axioms
 - Covers classical limit theorems (LLN, CLT, law of the iterated logarithm) in depth
@@ -25,6 +25,8 @@ Shiryaev assumes comfort with $\sigma$-algebras, measures, and Lebesgue integrat
 
 ## Exercises by Chapter
 
-- **Chapter 1** · Probability Spaces — [Browse →](/math/shiryaev-probability/ch01-probability-space/)
+- **Chapter 1** · Elementary Probability Theory — [Browse →](/math/shiryaev-probability/ch01-elementary-probability/)
+- **Chapter 2** · Mathematical Foundations of Probability Theory — [Browse →](/math/shiryaev-probability/ch02-mathematical-foundations/)
+- **Chapter 3** · Convergence of Probability Measures and the CLT — [Browse →](/math/shiryaev-probability/ch03-convergence-clt/)
 
 Solutions are added as I work through the text.
